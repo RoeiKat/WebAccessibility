@@ -1,24 +1,12 @@
 import React, { useState, useEffect } from "react";
+import Accessibility from "./Components/Accessibility/Accessibility";
+import { useAccessibility } from "./hooks/useAccessibility";
 
 function App() {
-  let font = 16;
-
-  const increaseFont = function () {
-    font += 4;
-    document.body.style.fontSize = `${font}px`;
-  };
-
-  const decreaseFont = function () {
-    font -= 4;
-    document.body.style.fontSize = `${font}px`;
-  };
-
-  const highlightLinks = function () {
-    const elements = document.getElementsByTagName("a");
-  };
-
+  useAccessibility();
   return (
     <div>
+      <Accessibility />
       <header>
         <div>Hey</div>
       </header>
