@@ -15,7 +15,7 @@ const FeatureButton = function (props: {
     <Card
       className="col-5 mx-1 mt-1 mb-1 pt-3 d-flex align-items-center justify-content-center"
       onClick={featureFunc}
-      style={{ fontSize: "16px" }}
+      style={{ fontSize: "16px", cursor: "pointer" }}
     >
       <span style={{ fontSize: "32px" }}>
         <FontAwesomeIcon icon={icon} />

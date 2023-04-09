@@ -13,7 +13,6 @@ const accessibilitySlice = createSlice({
   initialState: initalState,
   reducers: {
     showModal(state, action) {
-      console.log(action.payload);
       state.accessibilityModalShow = action.payload;
     },
     resetAccessibilityState(state) {
@@ -60,7 +59,7 @@ const accessibilitySlice = createSlice({
       state.reversedColorsMode = !state.reversedColorsMode;
       document.body.style.filter = state.reversedColorsMode
         ? "invert(100%)"
-        : "invert(0%";
+        : "invert(0%)";
       localStorage.setItem(
         "accessibility",
         JSON.stringify({
@@ -68,7 +67,14 @@ const accessibilitySlice = createSlice({
         })
       );
     },
-    setLocalAccessibility(state, action) {},
+    setLocalAccessibility(state, action) {
+      state.fontSize = action.payload.state.fontSize;
+      document.body.style.fontSize = `${state.fontSize}px`;
+      state.reversedColorsMode = action.payload.state.reversedColorsMode;
+      if (state.reversedColorsMode) document.body.style.filter = "invert(100%)";
+      state.grayColorsMode = action.payload.state.grayColorsMode;
+      if (state.grayColorsMode) document.body.style.filter = "grayscale(100%)";
+    },
   },
 });
 

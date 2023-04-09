@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { AccessibilityInitalState } from "../interface/accessibilitySlice.interface";
+import { accessibilityActions } from "../store/slices/accessibilitySlice";
 
 export const useAccessibility = function () {
   const dispatch = useAppDispatch();
@@ -10,5 +11,12 @@ export const useAccessibility = function () {
   const { fontSize, reversedColorsMode, grayColorsMode } = useAppSelector(
     (state) => state.accessibility
   );
-  useEffect(() => {}, [fontSize, reversedColorsMode, grayColorsMode]);
+  console.log(accessibilityState);
+  useEffect(() => {
+    if (accessibilityState) {
+      dispatch(accessibilityActions.setLocalAccessibility(accessibilityState));
+    } else {
+      return;
+    }
+  }, [fontSize, reversedColorsMode, grayColorsMode]);
 };
