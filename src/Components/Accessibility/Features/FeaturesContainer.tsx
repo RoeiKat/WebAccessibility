@@ -1,4 +1,3 @@
-import React from "react";
 import { accessibilityActions } from "../../../store/slices/accessibilitySlice";
 import { useAppDispatch } from "../../../store/store";
 
@@ -10,6 +9,8 @@ import {
   faBarcode,
   faCircleHalfStroke,
   faRotateLeft,
+  faLink,
+  faHeading,
 } from "@fortawesome/free-solid-svg-icons";
 
 const FeaturesContainer = function () {
@@ -47,6 +48,20 @@ const FeaturesContainer = function () {
             dispatch(accessibilityActions.setReversedColorsMode())
           }
           featureName="Reversed colors"
+        />
+        <FeatureButton
+          icon={faLink}
+          featureFunc={() =>
+            dispatch(accessibilityActions.setHighlightedLinks())
+          }
+          featureName="Highlight links"
+        />
+        <FeatureButton
+          icon={faHeading}
+          featureFunc={() =>
+            dispatch(accessibilityActions.setHighlightedHeaders())
+          }
+          featureName="Highlight headers"
         />
         <FeatureButton
           icon={faRotateLeft}

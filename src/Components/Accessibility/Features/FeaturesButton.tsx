@@ -1,5 +1,3 @@
-import React from "react";
-import { useAppDispatch } from "../../../store/store";
 import { Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
@@ -10,7 +8,6 @@ const FeatureButton = function (props: {
   featureName: string;
 }) {
   const { icon, featureFunc, featureName } = props;
-  const dispatch = useAppDispatch();
   return (
     <Card
       className="col-5 mx-1 mt-1 mb-1 pt-3 d-flex align-items-center justify-content-center"

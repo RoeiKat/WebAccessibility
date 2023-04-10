@@ -3,4 +3,6 @@ export interface AccessibilityInitalState {
   fontSize: number;
   grayColorsMode: boolean;
   reversedColorsMode: boolean;
+  highlightLinksMode: boolean;
+  highlightHeadersMode: boolean;
 }

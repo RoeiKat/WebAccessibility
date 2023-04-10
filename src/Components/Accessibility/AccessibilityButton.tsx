@@ -12,15 +12,16 @@ const AccessibilityButton = function () {
       style={{
         width: "40px",
         height: "40px",
-        background: "red",
+        background: "#FFFFFF",
         borderTopRightRadius: "50%",
         borderBottomRightRadius: "50%",
         fontSize: "20px",
-        position: "fixed",
+        position: "absolute",
         cursor: "pointer",
-        top: "10vh",
+        top: "30vh",
+        zIndex: 999,
       }}
-      className="d-flex flex-row align-items-center justify-content-center"
+      className="d-flex flex-row align-items-center justify-content-center border border-dark"
       onClick={() => dispatch(accessibilityActions.showModal(true))}
     >
       <div>
