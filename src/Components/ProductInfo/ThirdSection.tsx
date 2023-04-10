@@ -1,7 +1,7 @@
 const ThirdSection = function () {
   return (
     <div className="mt-5 mb-5 row">
-      <div className="mx-4 col-5">
+      <div className="mx-md-4 col-12 col-lg-5">
         <img
           src="https://preview.redd.it/new-refined-delux-m800-software-now-with-lod-and-power-off-v0-skdalvkhy3a81.png?width=640&crop=smart&auto=webp&s=34eecd586b62f3ed4738426415f68ba9c150a71f"
           alt="m800 gaming mouse"
@@ -15,7 +15,7 @@ const ThirdSection = function () {
           </p>
         </div>
       </div>
-      <div className="mx-4 col-6 d-flex flex-column justify-content-center mb-5">
+      <div className="mx-md-4 col-12 col-lg-6 d-flex flex-column justify-content-center mb-5">
         <h1 style={{ fontWeight: "800" }}>
           <span
             className="mt-1 p-1 d-flex align-items-center"

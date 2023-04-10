@@ -15,7 +15,7 @@ const AccessibilityModal = function () {
             background: "#FFFFFF",
             width: "400px",
             borderRadius: "3%",
-            position: "absolute",
+            position: "fixed",
             paddingBottom: "20px",
             left: "6vh",
             top: "30vh",

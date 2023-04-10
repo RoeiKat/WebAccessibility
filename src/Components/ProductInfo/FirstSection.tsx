@@ -1,7 +1,7 @@
 const FirstSection = function () {
   return (
     <div className="row">
-      <div className="col-6 d-flex flex-column justify-content-center mb-5">
+      <div className="col-12 col-md-6 d-flex flex-column justify-content-center mb-5">
         <h1 style={{ fontWeight: "800" }}>
           Our gaming mouse will be
           <span
@@ -16,13 +16,13 @@ const FirstSection = function () {
           Upgrade your setup now, with Free Shipping on most items.
         </p>
       </div>
-      <div className="mx-4 col-5">
+      <div className="mx-md-4 col-12 col-md-5">
         <img
           src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41opgWSjttL.jpg"
           alt="m800 gaming mouse"
           className="w-75 mx-5"
         />
-        <div className="text-end">
+        <div className="text-md-end">
           <h1 style={{ fontWeight: "800" }}>M800 Pro</h1>
           <p className="text-secondary">
             One of the most important device for enthusiast gamers, a good

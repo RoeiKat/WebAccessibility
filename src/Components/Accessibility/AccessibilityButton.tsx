@@ -16,7 +16,7 @@ const AccessibilityButton = function () {
         borderTopRightRadius: "50%",
         borderBottomRightRadius: "50%",
         fontSize: "20px",
-        position: "absolute",
+        position: "fixed",
         cursor: "pointer",
         top: "30vh",
         zIndex: 999,

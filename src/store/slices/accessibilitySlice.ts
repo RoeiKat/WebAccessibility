@@ -31,12 +31,16 @@ const accessibilitySlice = createSlice({
       localStorage.removeItem("accessibility");
     },
     increaseFontSize(state, action) {
-      state.fontSize += action.payload;
-      document.body.style.fontSize = `${state.fontSize}px`;
+      if (state.fontSize < 32) {
+        state.fontSize += action.payload;
+        document.body.style.fontSize = `${state.fontSize}px`;
+      }
     },
     decreaseFontSize(state, action) {
-      state.fontSize -= action.payload;
-      document.body.style.fontSize = `${state.fontSize}px`;
+      if (state.fontSize > 12) {
+        state.fontSize -= action.payload;
+        document.body.style.fontSize = `${state.fontSize}px`;
+      }
     },
     setGrayscaleMode(state) {
       state.grayColorsMode = !state.grayColorsMode;

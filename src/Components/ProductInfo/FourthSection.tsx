@@ -12,28 +12,28 @@ const FourthSection = function () {
   return (
     <div className="mt-5 mb-5 row">
       <div
-        className="col-3 d-flex align-items-center fs-4 "
+        className="col-6 col-md-3 d-flex align-items-center fs-4 "
         style={{ fontWeight: "800" }}
       >
         <FontAwesomeIcon icon={faGaugeHigh} style={{ fontSize: "32px" }} />
         <span className="mx-3">19000DPI</span>
       </div>
       <div
-        className="col-3 d-flex align-items-center fs-4"
+        className="col-6 col-md-3 d-flex align-items-center fs-4"
         style={{ fontWeight: "800" }}
       >
         <FontAwesomeIcon icon={faComputerMouse} style={{ fontSize: "32px" }} />
         <span className="mx-3">80M+ Clicks</span>
       </div>
       <div
-        className="col-3 d-flex align-items-center fs-4"
+        className="col-6 col-md-3 d-flex align-items-center fs-4"
         style={{ fontWeight: "800" }}
       >
         <FontAwesomeIcon icon={faBolt} style={{ fontSize: "32px" }} />
         <span className="mx-3">1000Hz Refresh Rate</span>
       </div>
       <div
-        className="col-3 d-flex align-items-center fs-4"
+        className="col-6 col-md-3 d-flex align-items-center fs-4"
         style={{ fontWeight: "800" }}
       >
         <FontAwesomeIcon icon={faMicrochip} style={{ fontSize: "32px" }} />
