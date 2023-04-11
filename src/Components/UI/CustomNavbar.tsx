@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faDollar,
+  faUser,
   faPhoneVolume,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
@@ -12,8 +12,8 @@ const CustomNavbar = function () {
       <Navbar bg="light" variant="light" collapseOnSelect expand="md">
         <Container className="d-flex justify-content-between">
           <Navbar.Brand href="#" className="col-6 fs-3">
-            <span className="text-secondary">DE</span>
-            <span style={{ fontWeight: "700" }}>LUX</span>
+            <span className="text-secondary">AB</span>
+            <span style={{ fontWeight: "700" }}>ILLITY</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
@@ -28,14 +28,14 @@ const CustomNavbar = function () {
               </Nav.Item>
               <Nav.Item style={{ marginLeft: "3px" }} className="mt-2 mt-sm-0">
                 <Button variant="dark" className="px-4 text-center ">
-                  <FontAwesomeIcon icon={faDollar} className="mx-2" />
+                  <FontAwesomeIcon icon={faUser} className="mx-2" />
                   <a
                     className="text-light"
                     target="_blank"
-                    href="https://he.aliexpress.com/item/1005004550995519.html?spm=a2g0o.productlist.main.27.674eoS7moS7m97&algo_pvid=8aca29a2-04c9-4065-92c8-a075647ac7c5&algo_exp_id=8aca29a2-04c9-4065-92c8-a075647ac7c5-13&pdp_npi=3%40dis%21ILS%21372.87%21164.08%21%21%21%21%21%402100bb6416811157844942284d0729%2112000029578496104%21sea%21IL%21139975085&curPageLogUid=3vHbLdeFNxgL"
+                    href="#"
                     style={{ fontWeight: "700", marginRight: "10px" }}
                   >
-                    BUY NOW!
+                    CONTACT US!
                   </a>
                 </Button>
               </Nav.Item>

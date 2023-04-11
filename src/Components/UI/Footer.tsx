@@ -1,6 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShop } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faYoutube,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = function () {
   return (
@@ -20,12 +23,12 @@ const Footer = function () {
           }}
         >
           <a
-            href="https://www.deluxworld.com/en/"
+            href="https://github.com/RoeiKat/WebAccessibility"
             className="link-dark"
             target="_blank"
           >
             <FontAwesomeIcon
-              icon={faShop}
+              icon={faGithub}
               style={{
                 fontSize: "24px",
                 textDecoration: "none",
@@ -70,7 +73,7 @@ const Footer = function () {
           }}
         >
           <a
-            href="youtube.com/results?search_query=delux+m800"
+            href="https://www.youtube.com/watch?v=tcGl9eH6pMI&t=19s"
             className="link-dark"
             target="_blank"
           >

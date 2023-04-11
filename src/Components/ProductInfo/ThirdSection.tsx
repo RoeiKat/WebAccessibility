@@ -2,16 +2,39 @@ const ThirdSection = function () {
   return (
     <div className="mt-5 mb-5 row">
       <div className="mx-md-4 col-12 col-lg-5">
-        <img
+        <div className="p-5 w-75 mx-5 d-flex flex-column align-items-center justify-content-center">
+          <a
+            href="#"
+            className="fs-1"
+            style={{ color: "#E84855", fontWeight: "700" }}
+          >
+            {"<FirstLink/>"}
+          </a>
+          <a
+            href="#"
+            className="fs-1"
+            style={{ color: "#3185FC", fontWeight: "700" }}
+          >
+            {"<SecondLink/>"}
+          </a>
+          <a
+            href="#"
+            className="fs-1"
+            style={{ color: "#F9DC5C", fontWeight: "700" }}
+          >
+            {"<ThirdLink/>"}
+          </a>
+        </div>
+        {/* <img
           src="https://preview.redd.it/new-refined-delux-m800-software-now-with-lod-and-power-off-v0-skdalvkhy3a81.png?width=640&crop=smart&auto=webp&s=34eecd586b62f3ed4738426415f68ba9c150a71f"
           alt="m800 gaming mouse"
           className="w-100"
-        />
+        /> */}
         <div className="text-start">
-          <h1 style={{ fontWeight: "800" }}>Delux Software</h1>
+          <h1 style={{ fontWeight: "800" }}>Links feature</h1>
           <p className="text-secondary">
-            Built to allow full customization for your product, From customizing
-            your DPI,RGB,LOD,Polling Rate or Macro's - here you can find it all.
+            Built to allow users to emphasize links on your website so they can
+            navigate easily between them.
           </p>
         </div>
       </div>
@@ -26,8 +49,8 @@ const ThirdSection = function () {
           With heaps of features.
         </h1>
         <p className="text-secondary">
-          Express yourself and control your color theme to perfect your setup
-          Without compromising about performance.
+          Allow users to control their experience with perfecting their -
+          accessibility Without compromising about performance.
         </p>
       </div>
     </div>

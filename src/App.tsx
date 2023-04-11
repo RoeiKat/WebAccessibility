@@ -16,7 +16,7 @@ function App() {
     <Fragment>
       <CustomNavbar />
       <Accessibility />
-      <Container className="mt-5">
+      <Container className="mt-5" id="container">
         <FirstSection />
         <SecondSection />
         <ThirdSection />

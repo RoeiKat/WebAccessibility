@@ -19,11 +19,12 @@ const accessibilitySlice = createSlice({
       state.accessibilityModalShow = action.payload;
     },
     resetAccessibilityState(state) {
+      const container = document.getElementById("container");
       state.fontSize = 16;
       document.body.style.fontSize = "16px";
       state.grayColorsMode = false;
       state.reversedColorsMode = false;
-      document.body.style.filter = "none";
+      container!.style.filter = "none";
       state.highlightHeadersMode = false;
       highlightAllHeaders(false);
       state.highlightLinksMode = false;
@@ -44,13 +45,15 @@ const accessibilitySlice = createSlice({
     },
     setGrayscaleMode(state) {
       state.grayColorsMode = !state.grayColorsMode;
-      document.body.style.filter = state.grayColorsMode
+      const container = document.getElementById("container");
+      container!.style.filter = state.grayColorsMode
         ? "grayscale(100%)"
         : "grayscale(0%)";
     },
     setReversedColorsMode(state) {
       state.reversedColorsMode = !state.reversedColorsMode;
-      document.body.style.filter = state.reversedColorsMode
+      const container = document.getElementById("container");
+      container!.style.filter = state.grayColorsMode
         ? "invert(100%)"
         : "invert(0%)";
     },
@@ -63,12 +66,13 @@ const accessibilitySlice = createSlice({
       highlightAllHeaders(state.highlightHeadersMode);
     },
     useLocalAccessibility(state, action) {
+      const container = document.getElementById("container");
       state.fontSize = action.payload.state.fontSize;
       document.body.style.fontSize = `${state.fontSize}px`;
       state.reversedColorsMode = action.payload.state.reversedColorsMode;
-      if (state.reversedColorsMode) document.body.style.filter = "invert(100%)";
+      if (state.reversedColorsMode) container!.style.filter = "invert(100%)";
       state.grayColorsMode = action.payload.state.grayColorsMode;
-      if (state.grayColorsMode) document.body.style.filter = "grayscale(100%)";
+      if (state.grayColorsMode) container!.style.filter = "grayscale(100%)";
       state.highlightHeadersMode = action.payload.state.highlightHeadersMode;
       highlightAllHeaders(state.highlightHeadersMode);
       state.highlightLinksMode = action.payload.state.highlightLinksMode;
