@@ -18,7 +18,7 @@ const AccessibilityButton = function () {
         fontSize: "20px",
         position: "fixed",
         cursor: "pointer",
-        top: "30vh",
+        top: "10vh",
         zIndex: 999,
       }}
       className="d-flex flex-row align-items-center justify-content-center border border-dark"

@@ -53,7 +53,7 @@ const accessibilitySlice = createSlice({
     setReversedColorsMode(state) {
       state.reversedColorsMode = !state.reversedColorsMode;
       const container = document.getElementById("container");
-      container!.style.filter = state.grayColorsMode
+      container!.style.filter = state.reversedColorsMode
         ? "invert(100%)"
         : "invert(0%)";
     },

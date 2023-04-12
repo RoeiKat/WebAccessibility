@@ -18,7 +18,7 @@ const AccessibilityModal = function () {
             position: "fixed",
             paddingBottom: "20px",
             left: "6vh",
-            top: "30vh",
+            top: "10vh",
             zIndex: 999,
           }}
         >

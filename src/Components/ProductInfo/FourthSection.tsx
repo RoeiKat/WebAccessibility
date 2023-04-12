@@ -1,11 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDollar,
-  faDatabase,
+  faMobile,
   faBolt,
   faSmile,
 } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "react-bootstrap";
 
 const FourthSection = function () {
   return (
@@ -22,7 +21,7 @@ const FourthSection = function () {
         style={{ fontWeight: "800" }}
       >
         <FontAwesomeIcon icon={faDollar} style={{ fontSize: "32px" }} />
-        <span className="mx-3">Free to use</span>
+        <span className="mx-3">Free for all</span>
       </div>
       <div
         className="col-6 col-md-3 d-flex align-items-center fs-4"
@@ -35,8 +34,8 @@ const FourthSection = function () {
         className="col-6 col-md-3 d-flex align-items-center fs-4"
         style={{ fontWeight: "800" }}
       >
-        <FontAwesomeIcon icon={faDatabase} style={{ fontSize: "32px" }} />
-        <span className="mx-3">Stores localy</span>
+        <FontAwesomeIcon icon={faMobile} style={{ fontSize: "32px" }} />
+        <span className="mx-3">Phone friendly</span>
       </div>
       <div className="mt-5 mb-5">
         <div className="mt-5 mb-5 text-center">
