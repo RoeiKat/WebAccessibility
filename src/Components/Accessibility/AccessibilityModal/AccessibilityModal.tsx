@@ -2,7 +2,7 @@ import ModalCloseBtn from "./ModalCloseBtn";
 import { useAppSelector } from "../../../store/store";
 import FeaturesContainer from "../Features/FeaturesContainer";
 
-const AccessibilityModal = function () {
+const AccessibilityModal = function (props: { color: string }) {
   const { accessibilityModalShow } = useAppSelector(
     (state) => state.accessibility
   );
@@ -12,7 +12,7 @@ const AccessibilityModal = function () {
         <div
           className="border border-dark"
           style={{
-            background: "#FFFFFF",
+            background: props.color,
             width: "400px",
             borderRadius: "3%",
             position: "fixed",

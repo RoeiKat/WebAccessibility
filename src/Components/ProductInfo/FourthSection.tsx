@@ -37,15 +37,6 @@ const FourthSection = function () {
         <FontAwesomeIcon icon={faMobile} style={{ fontSize: "32px" }} />
         <span className="mx-3">Phone friendly</span>
       </div>
-      <div className="mt-5 mb-5">
-        <div className="mt-5 mb-5 text-center">
-          <h1 style={{ fontWeight: 700 }}>
-            So...{" "}
-            <span className="text-secondary">What are you waiting for?</span>
-          </h1>
-          <p className="text-secondary">Try it out now!</p>
-        </div>
-      </div>
     </div>
   );
 };

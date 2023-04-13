@@ -1,7 +1,7 @@
 const ThirdSection = function () {
   return (
     <div className="mt-5 mb-5 row">
-      <div className="mx-md-4 col-12 col-lg-5">
+      <div className="mx-md-3 col-12 col-lg-5">
         <div className="p-5 w-75 mx-5 d-flex flex-column align-items-center justify-content-center">
           <a
             href="#"
@@ -25,11 +25,6 @@ const ThirdSection = function () {
             {"<ThirdLink/>"}
           </a>
         </div>
-        {/* <img
-          src="https://preview.redd.it/new-refined-delux-m800-software-now-with-lod-and-power-off-v0-skdalvkhy3a81.png?width=640&crop=smart&auto=webp&s=34eecd586b62f3ed4738426415f68ba9c150a71f"
-          alt="m800 gaming mouse"
-          className="w-100"
-        /> */}
         <div className="text-start">
           <h1 style={{ fontWeight: "800" }}>Links feature</h1>
           <p className="text-secondary">
@@ -49,8 +44,8 @@ const ThirdSection = function () {
           With heaps of features.
         </h1>
         <p className="text-secondary">
-          Allow users to control their experience with perfecting their -
-          accessibility Without compromising about performance.
+          From changing colors to adding or changing logic for the tool, comes
+          with built in 6 features to enable more focus about your product.
         </p>
       </div>
     </div>

@@ -5,10 +5,10 @@ const SecondSection = function () {
   return (
     <div className="mt-5 mb-5 row">
       <div className="mt-5 mb-5 col-12 d-flex flex-column flex-md-row justify-content-center">
-        <div className="col-12 col-md-2 text-center">
+        <div className="col-12 col-md-2 mx-0 mx-md-5 text-center">
           <FontAwesomeIcon icon={faCode} style={{ fontSize: "160px" }} />
         </div>
-        <div className="col-12 col-md-4 d-flex align-items-center">
+        <div className="col-12 mx-5 col-md-4 d-flex align-items-center">
           <ul className="mt-3 fs-4" style={{ fontWeight: "700" }}>
             <li>6 Different features.</li>
             <li className="mb-2 mt-2">Fully customizable code.</li>

@@ -2,41 +2,44 @@ import { Carousel } from "react-bootstrap";
 
 const CustomCarousel = function () {
   return (
-    <Carousel variant="dark">
+    <Carousel variant="light" fade interval={5000}>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png"
+          src="https://iili.io/HvIrXV9.png"
           alt="First slide"
+          style={{ width: "400px", height: "350px" }}
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Components</h3>
+          <p>Only 3 Components and you're good to go!.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png"
+          src="https://iili.io/HvI4jzN.png"
           alt="Second slide"
+          style={{ width: "400px", height: "350px" }}
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>State</h3>
+          <p>Initial state for the slice, fully customizable.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png"
+          src="https://iili.io/HvIiIgn.png"
           alt="Third slide"
+          style={{ width: "400px", height: "350px" }}
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h3 className="text-dark">Accessibility</h3>
+          <p className="text-dark">
+            The accessibility component with all its features.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

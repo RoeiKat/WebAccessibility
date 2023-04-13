@@ -8,18 +8,20 @@ import SecondSection from "./Components/ProductInfo/SecondSection";
 import ThirdSection from "./Components/ProductInfo/ThirdSection";
 import FourthSection from "./Components/ProductInfo/FourthSection";
 import Footer from "./Components/UI/Footer";
+import FifthSection from "./Components/ProductInfo/FifthSection";
 
 function App() {
   useAccessibility();
   return (
     <Fragment>
       <CustomNavbar />
-      <Accessibility />
+      <Accessibility color="#FFFFFF" />
       <Container className="mt-5" id="container">
         <FirstSection />
         <SecondSection />
         <ThirdSection />
         <FourthSection />
+        <FifthSection />
         <Footer />
       </Container>
     </Fragment>

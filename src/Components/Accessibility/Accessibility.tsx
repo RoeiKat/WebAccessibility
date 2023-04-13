@@ -1,13 +1,13 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 
 import AccessibilityModal from "./AccessibilityModal/AccessibilityModal";
 import AccessibilityButton from "./AccessibilityButton";
 
-const Accessibility = function () {
+const Accessibility = function (props: { color: string }) {
   return (
     <Fragment>
-      <AccessibilityModal />
-      <AccessibilityButton />
+      <AccessibilityModal color={props.color} />
+      <AccessibilityButton color={props.color} />
     </Fragment>
   );
 };

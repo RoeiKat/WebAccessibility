@@ -28,11 +28,6 @@ const FirstSection = function () {
             {"<H3Heading/>"}
           </h3>
         </div>
-        {/* <img
-          src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41opgWSjttL.jpg"
-          alt="m-800 pro gaming mouse"
-          className="w-75 mx-5"
-        /> */}
         <div className="text-md-end">
           <h1 style={{ fontWeight: "800" }}>Headings feature</h1>
           <p className="text-secondary">

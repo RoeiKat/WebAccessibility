@@ -73,7 +73,7 @@ const Footer = function () {
           }}
         >
           <a
-            href="https://www.youtube.com/watch?v=tcGl9eH6pMI&t=19s"
+            href="https://www.youtube.com/results?search_query=why+web+accessibility+important"
             className="link-dark"
             target="_blank"
           >
